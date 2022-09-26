@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/_imicett/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>ICE BLOGLIFE</b></h1>
+    <h6>Welcome to the blog of <span class="w3-tag">Ice's world</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/308394245_1134459414156094_881376438033689989_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=hPV9Zx5sO9cAX8LxPLo&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVLIktSIYA8xbUkZDBCfHEt2QIotWyuTdThtAAFoBYiNWw&oe=635697B2" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+        <h1 class="w3-text-white">Ice's</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>FASHION BLOG</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>MY POST</h3>
+          <h5> <span class="w3-opacity">August 31, 2022</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/296125866_816431059697444_6143017566768996531_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=6KKMFShoJJAAX8Pb_Cm&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVKp4F7ZHVK5fZkDSN3b3w8LwxAeBUfCC6sSirP3Kc4BTg&oe=6354E706" alt="Girl Hat" style="width:100%" class="w3-padding-16" >
+          <p><strong>More Hats! ↺ ✶</strong> with the sun that's about to burn me.🥵🥵🥵
+          </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/307921943_3169302560050315_3973798213614071273_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=iEszBciBkOoAX_fgG6V&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVJaz5BMgqN5zYHh4iKX1qwqhyHaF8WIgBtU0ZDtByIOhw&oe=63563E9E" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>THV <span class="w3-opacity w3-medium">August 31, 2022, 6:32 PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>MY POST</h3>
+          <h5><span class="w3-opacity">Febuary 27, 2021</span></h5>
+        </div>
+
+        <div class="w3-justify">
+        <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/300249576_762634034829907_3242836186685144278_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=LAL6vP8j6ygAX-RYMtR&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVKeB5kFPy5olPFemxK3DLQLXsnOJAYOprWiXx4aU3v2Eg&oe=6357C405" alt="Girl Hat" style="width:100%" class="w3-padding-16" >
+          <p><strong>Hats!</strong> ᴍᴏᴘ ᴍᴀᴘ ♡︎シ</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/308839706_485321736587704_4355185063571169282_n.jpg?stp=dst-jpg_s180x540&_nc_cat=110&ccb=1-7&_nc_sid=aee45a&_nc_ohc=ZwAlqRdNRh8AX-w9axA&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJNTKl6vzM7WEIcgsdpO04yccXvOGIiJInjZXALbut2RQ&oe=6357D5CB" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>agustd <span class="w3-opacity w3-medium"> Febuary 28, 2021, 10:52 PM</span></h4>
+                <p>Love your post! Simply the best!</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/307422314_617422186709090_4691550817648163763_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=uklr25DgVmIAX8k3zZI&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVIs3vlnLW_LUQVtF2HeCzpdeObj4NRt3Njmeoe8aeNyRg&oe=6357327B" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>uarmyhope <span class="w3-opacity w3-medium">March 1, 2021, 9:12 PM</span></h4>
+                <p>Where's hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>MY POST</h3>
+          <h5> <span class="w3-opacity">December 26, 2021</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/307788875_539840887950232_2184112420530841287_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ae9488&_nc_ohc=uLb11hZU9nUAX-R_QLa&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVI5Q_Y24gO8U52MfQbuo0GNWxzUamfAzq3OwnbHyqO60A&oe=6356E0CC" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Dont miss!</strong> 🦒</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/306702576_5770473829639419_1223261935771225294_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=214VaU3Ffz0AX9qxFPB&tn=i3u3ejkVcDmi3Wzw&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVL2OYdf1Wp9xaSRiY7PKjE3d1rTxsBbL-UCl6kTk0PpBw&oe=635863F5" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>real___pcy <span class="w3-opacity w3-medium">December 26, 2021, 7:22 PM</span></h4>
+                <p>Thank you for coming to feed the animals here.</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/307948940_5426316760820400_6073581162580853610_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=1KPQjQjXlCMAX81KjC5&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVIgHA9rTaJyJFkNHo19rVtqUbLxZ2ovF7AMynXfcjvtig&oe=635787A1" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>bambam1a <span class="w3-opacity w3-medium">December26, 2021, 10:32 PM</span></h4>
+                <p>Very long neck giraffe I fed him on tiptoe😂😮‍💨
+                    .</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/307633405_1124837148418770_2595898855063452286_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dCgO0VNVIKIAX93XAoP&tn=i3u3ejkVcDmi3Wzw&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVIheGMKmcWqjrOXwoQopKJaYXB3hwwIpLQuIGl5M3Uc8w&oe=63567546" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>xiuminmallow <span class="w3-opacity w3-medium">December 27, 2021, 9:12 PM</span></h4>
+                <p>I don't have enough money to buy food for all the animals!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/308725357_1466408090449622_6429862291156180249_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=c2KLglGiBaEAX9vKPR0&tn=i3u3ejkVcDmi3Wzw&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVIGByUcKsJ3ZUl1JOshdgxvZyp-toKypBPt7HtytZxnnw&oe=6355E7E7" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>My Name</h4>
+          <p>Just me, myself and I, exploring the universe of uknownment. I have a heart. I want to share my world with you.</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/308154417_611582790459504_5926134563799667370_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=ae9488&_nc_ohc=gyMSfxexZw8AX_XvXze&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVKQQx9D6pBneCBkh4inrJJ-Hyd2f6ltTdxT3o58-IPgfw&oe=6354D9A7" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">j.m</span>
+            <br>
+            <span>BTS</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/308576284_581137177094780_5806334666450845995_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=9TivG85z-NYAX8_SyIj&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVL3OFH8Y9bIicqNK2wtVTPtDvVoh3b3ps5NiOSLe4_WUQ&oe=6358BF35" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">jin</span>
+            <br>
+            <span>BTS</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/307422314_617422186709090_4691550817648163763_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=uklr25DgVmIAX8k3zZI&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVIs3vlnLW_LUQVtF2HeCzpdeObj4NRt3Njmeoe8aeNyRg&oe=6357327B" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">uarmyhope</span>
+            <br>
+            <span>BTS</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/308839706_485321736587704_4355185063571169282_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=ZwAlqRdNRh8AX9Gk5WK&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVJGXoaSyFmhRvoqN_PqrY-iGHM2Q7fX04RiB6c1D86b_A&oe=6357D5CB" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">agustd</span>
+            <br>
+            <span>BTS</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Advertise</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">Contact me directly</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Fashion</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Zoo</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hats</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Badminton</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sweaters</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Deals</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Jeans</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Trends</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>TRENDS</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+            <p><video style="width:100%" controls="controls">
+                <source src="1234.mp4" type="video/mp4" />
+            </video>
+            </p>
+            <p><video style="width:100%" controls="controls">
+                <source src="5678.mp4" type="video/mp4" />
+            </video>
+            </p>
+          </div>
+          <div class="w3-col s6">
+            <p><img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/307830522_522864656315194_1909911034492507540_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=1W18TlOMX0AAX8Yqd0l&tn=i3u3ejkVcDmi3Wzw&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVLz1U08t966z3UatrtPiyDEPUPE5D1dVKKG3Fc3XnlDjw&oe=63558C30" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+            <p><img src="https://scontent.fkdt1-1.fna.fbcdn.net/v/t1.15752-9/308754695_3258778484437953_1888047731331221276_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=NJO4U6Rn6OwAX-YpOcb&_nc_ht=scontent.fkdt1-1.fna&oh=03_AVKWbkNNeBsW6DXe_OVK6CqNo9fpGugFneyLD8_9Ny-f7w&oe=6355B7DA" alt="Jeans" style="width:100%"></p>
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="" target="_blank">__imicett</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
